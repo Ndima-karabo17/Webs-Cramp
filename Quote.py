@@ -9,6 +9,7 @@ response = requests.get(url)
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    titles = soup.find_all('figure')
+    titles = soup.find_all('h1')
+    quotes = soup.find_all('figure')
     print(titles)
-
+    print(quotes)
