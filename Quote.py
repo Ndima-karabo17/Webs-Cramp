@@ -11,5 +11,11 @@ if response.status_code == 200:
 
     titles = soup.find_all('h1')
     quotes = soup.find_all('figure')
-    print(titles)
-    print(quotes)
+
+    res = []
+
+    for title in titles:
+        print(title.text)
+
+        for quote in quotes:
+            print(quote.text)
