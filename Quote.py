@@ -1,8 +1,4 @@
-from http.client import responses
-from time import sleep
 
-import requests
-from flask import Flask
 from bs4 import BeautifulSoup
 import requests
 
